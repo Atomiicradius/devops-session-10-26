@@ -7,7 +7,7 @@ Deck: `slides/devops-workshop.pptx` (43 slides, colour-coded: blue = Docker, vio
 ## Before the session
 
 Both:
-- [ ] Push this repo to GitHub (public). Put the URL + a QR code on slide 1 (replace `<your-user>`).
+- [ ] Repo is at github.com/PhalakshaCG/devops-session-10-26 (public). Put a QR code of it on slide 1.
 - [ ] Each instructor creates a Codespace on the repo and runs all three labs end to end. Note timings.
 - [ ] Day before: tell students to have a GitHub account and verify they can open github.com/codespaces (free tier is 120 core-hours/month, plenty).
 - [ ] Projector check: terminal font ≥ 18 pt, light terminal theme.

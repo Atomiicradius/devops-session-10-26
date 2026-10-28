@@ -182,7 +182,7 @@ async function recap(title, items, notes) {
   s.addImage({ data: await icon("FaDocker", H.accent1), x: 6.2, y: 0.7, w: 0.8, h: 0.8, objectName: "docker icon" });
   s.addImage({ data: await icon("SiKubernetes", H.accent4), x: 7.3, y: 0.7, w: 0.8, h: 0.8, objectName: "k8s icon" });
   s.addImage({ data: await icon("FaJenkins", H.accent3), x: 8.4, y: 0.7, w: 0.8, h: 0.8, objectName: "jenkins icon" });
-  box(s, { x: 0.6, y: 4.3, w: 8.8, h: 0.6, t: "Repo + labs:  github.com/<your-user>/devops-workshop      →  Code ▸ Codespaces ▸ Create codespace", color: "1E293B", tc: "E2E8F0", size: 14, bold: true });
+  box(s, { x: 0.6, y: 4.3, w: 8.8, h: 0.6, t: "Repo + labs:  github.com/PhalakshaCG/devops-session-10-26      →  Code ▸ Codespaces ▸ Create codespace", color: "1E293B", tc: "E2E8F0", size: 14, bold: true });
 
   // 2 agenda
   s = slide("CONTENT", "Today: the right half of the DevOps loop", "Plan-code-build-test-release-deploy-operate-monitor. Git covered plan/code. Today: build+test (Docker, CI), release+deploy (Kubernetes, CD). Point at the colour legend: every slide is colour-coded by topic.");

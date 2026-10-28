@@ -9,7 +9,7 @@ Colour code used throughout the deck: **blue = Docker, violet = Kubernetes, ambe
 ## Part 0 · Intro (slides 1–3)
 
 ### Slide 1 · Title
-Replace `<your-user>` with the real GitHub org/user before presenting. Put a QR code of the repo URL on this slide. The point of showing it first: Codespaces take ~2 minutes to build, so get every student clicking **Code → Codespaces → Create codespace** while you do the intro.
+The repo URL (github.com/PhalakshaCG/devops-session-10-26) is on the slide; add a QR code of it. The point of showing it first: Codespaces take ~2 minutes to build, so get every student clicking **Code → Codespaces → Create codespace** while you do the intro.
 
 ### Slide 2 · The DevOps loop and the agenda
 **What it says.** The infinity loop of DevOps: Plan → Code → Build → Test → Release → Deploy → Operate → Monitor. Git (already covered) lives in Plan/Code. Today covers Build, Test, Release, Deploy.
