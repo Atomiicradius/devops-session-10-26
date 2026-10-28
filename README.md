@@ -13,7 +13,7 @@ A 2.5-hour beginner workshop for engineering students. Everything runs inside **
 | `labs/` | Step-by-step hands-on labs (start with `labs/00-setup.md`) |
 | `SESSION_PLAN.md` | Minute-by-minute plan for instructors |
 | `CHEATSHEET.md` | All commands on one page |
-| `slides/` | The workshop deck |
+| `slides/` | `devops-workshop.pptx` (the 2.5 h session deck) and `docker-course.pptx` (a standalone 3 h Docker course deck following the TechWorld with Nana outline) |
 
 ## Quick start (students)
 
