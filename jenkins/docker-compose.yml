@@ -1,0 +1,11 @@
+# Instructor demo: `docker compose up -d` then open http://localhost:8080
+# First-run password: docker compose exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+services:
+  jenkins:
+    image: jenkins/jenkins:lts-jdk17
+    ports:
+      - "8080:8080"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+volumes:
+  jenkins_home:

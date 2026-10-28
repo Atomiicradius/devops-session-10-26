@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-devops
+spec:
+  replicas: 2                      # how many Pods we want
+  selector:
+    matchLabels:
+      app: hello-devops
+  template:                        # Pod template
+    metadata:
+      labels:
+        app: hello-devops
+    spec:
+      containers:
+        - name: hello-devops
+          image: hello-devops:v1
+          imagePullPolicy: IfNotPresent   # use the image we loaded into minikube
+          ports:
+            - containerPort: 3000
+          env:
+            - name: APP_VERSION
+              value: "v1"
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 3000
+            initialDelaySeconds: 2
+            periodSeconds: 5

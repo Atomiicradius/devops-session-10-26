@@ -1,0 +1,23 @@
+// Declarative pipeline. Needs the NodeJS plugin + a tool named "node20" (Manage Jenkins > Tools).
+pipeline {
+  agent any
+  tools { nodejs "node20" }
+  stages {
+    stage("Checkout") {
+      steps { checkout scm }
+    }
+    stage("Install") {
+      steps { dir("app") { sh "npm install" } }
+    }
+    stage("Test") {
+      steps { dir("app") { sh "npm test" } }
+    }
+    stage("Build image") {
+      steps { dir("app") { sh "docker build -t hello-devops:${BUILD_NUMBER} ." } }
+    }
+  }
+  post {
+    success { echo "Pipeline passed ✅" }
+    failure { echo "Pipeline failed ❌" }
+  }
+}
