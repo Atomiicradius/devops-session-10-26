@@ -11,7 +11,7 @@ Goal: a working terminal with Docker, kubectl and minikube. No local installs.
    kubectl version --client
    minikube version
    ```
-   All three should print a version. If `docker` fails, wait 30 s and retry — the daemon starts after the editor. If `docker` is *not found* at all, the container build failed: press `F1` → **Codespaces: Rebuild Container**, or delete the Codespace and create a new one.
+   All three should print a version. If `docker` fails, wait 30 s and retry — the daemon starts after the editor. If `minikube` or `kubectl` is *not found*, run `bash .devcontainer/setup.sh` (it installs what's missing, with retries).
 4. Start minikube **now** so it's warm by the time we need it (takes 1–2 min, runs in the background while we do Docker):
    ```bash
    minikube start --driver=docker --cpus=2 --memory=3g

@@ -1,22 +1,7 @@
 {
-  "name": "DevOps Workshop (Docker + minikube)",
-  "image": "mcr.microsoft.com/devcontainers/base:trixie",
-  "runArgs": ["--privileged"],
-  "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {
-      "enableNonRootDocker": "true",
-      "moby": "false"
-    },
-    "ghcr.io/devcontainers/features/kubectl-helm-minikube:1": {
-      "version": "latest",
-      "helm": "latest",
-      "minikube": "latest"
-    },
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "20"
-    },
-    "ghcr.io/devcontainers/features/sshd:1": {}
-  },
+  "name": "DevOps Workshop",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
   "forwardPorts": [3000, 8080],
-  "postCreateCommand": "docker --version && minikube version --short && kubectl version --client && node --version"
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "customizations": { "vscode": { "extensions": ["ms-azuretools.vscode-docker"] } }
 }

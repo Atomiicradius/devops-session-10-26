@@ -51,6 +51,7 @@ Hands-on: 72 min of labs + the Git exercises ≈ 55 % of the session.
 - The quick-check slides: ask, wait 10 seconds, let a student answer, then confirm. Answers are in the speaker notes.
 - Common failures:
   - `docker: Cannot connect to the Docker daemon` → daemon still booting, wait 30 s.
+  - `minikube: command not found` → `bash .devcontainer/setup.sh` (post-create download failed; this re-runs it).
   - `minikube start` stuck → `minikube delete && minikube start --driver=docker`.
   - Pod `ErrImagePull` → forgot `minikube image load`, or image tag typo.
   - Port popup didn't appear → PORTS tab in VS Code, click the globe icon.
