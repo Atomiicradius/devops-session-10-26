@@ -13,6 +13,7 @@ A 2.5-hour beginner workshop for engineering students. Everything runs inside **
 | `labs/` | Step-by-step hands-on labs (start with `labs/00-setup.md`) |
 | `SESSION_PLAN.md` | Minute-by-minute plan for instructors |
 | `CHEATSHEET.md` | All commands on one page |
+| `hackathon/` | Chaos Day: a 3-hour self-paced project with a starter app, scripted incidents, self-check and grading rubric |
 | `slides/` | `devops-workshop.pptx` (the 2.5 h session deck) `docker-course.pptx` (standalone 3 h Docker course) and `kubernetes-course.pptx` (standalone 4 h Kubernetes course), both following the TechWorld with Nana outlines. `build-*.js` regenerate them |
 
 ## Quick start (students)
