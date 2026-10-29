@@ -44,6 +44,10 @@ Hands-on: 72 min of labs + the Git exercises ≈ 55 % of the session.
 2. Full Jenkins demo including your `exercise-3.md` Freestyle job, compare with the Jenkinsfile: +10 min.
 3. Lab 1 + Lab 2 challenges as a race, prize for first green Actions badge: +10 min.
 
+## Verified on 2026-10-29 (fresh Codespace, 2-core)
+- Codespace build to usable terminal: ~3 min. `minikube start`: 2 min 30 s. `minikube image load`: 25 s. Everything else in Labs 1–3 runs in seconds.
+- All Lab 1, Lab 2 (incl. challenge) and Lab 3 steps pass as written. CI goes red on a broken `/health` and green on main.
+
 ## Facilitation tips
 - **Run every command on the projector in your own Codespace**, same order as the lab file. Students mirror you. Never type something not in the lab.
 - Checkpoints: after each lab section ask for thumbs-up. Floater goes to thumbs-down people.
